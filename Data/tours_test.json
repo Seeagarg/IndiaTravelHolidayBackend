@@ -1,0 +1,216 @@
+{
+  "1": {
+    "status": 200,
+    "message": "Success",
+    "path": "/api/destinations/1/tours",
+    "data": {
+      "content": [
+        {
+          "tourId": 1,
+          "title": "Shimla Local",
+          "placeName": "Shimla",
+          "duration": "3 Days / 2 Night",
+          "startingPrice": 5000,
+          "originalPrice": 7000,
+          "coverImage": "https://eurekacontent.gameit.in/test/img/Shimla/shimla4.jpeg",
+          "slug": "shimla-local-tour",
+          "tourImages": [
+            "https://eurekacontent.gameit.in/test/img/Shimla/shimla5.jpeg",
+            "https://eurekacontent.gameit.in/test/img/Shimla/shimla5.jpeg",
+            "https://eurekacontent.gameit.in/test/img/Shimla/shimla4.jpeg"
+          ]
+        },
+        {
+          "tourId": 2,
+          "title": "Shimla Manali Tour",
+          "placeName": "Shimla",
+          "duration": "5 Days / 4 Nights",
+          "startingPrice": 15000,
+          "originalPrice": 20000,
+          "coverImage": "https://eurekacontent.gameit.in/test/img/Manali/manali4.jpg",
+          "slug": "shimla-manali-tour",
+          "tourImages": [
+            "https://eurekacontent.gameit.in/test/img/Manali/Activities/activity4.jpeg",
+            "https://eurekacontent.gameit.in/test/img/Manali/Manali5.jpeg",
+            "https://eurekacontent.gameit.in/test/img/Manali/Activities/activity2.png"
+          ]
+        },
+        {
+          "tourId": 3,
+          "title": "Shimla Chail Tour",
+          "placeName": "Chail",
+          "duration": "3 Days / 2 Nights",
+          "startingPrice": 8000,
+          "originalPrice": 11000,
+          "coverImage": "https://eurekacontent.gameit.in/test/img/Shimla/shimla6.jpeg",
+          "slug": "shimla-chail-tour",
+          "tourImages": []
+        }
+      ],
+      "page": 0,
+      "size": 12,
+      "totalElements": 3,
+      "totalPages": 1,
+      "last": true
+    }
+  },
+  "3": {
+    "status": 200,
+    "message": "Success",
+    "path": "/api/destinations/3/tours",
+    "data": {
+      "content": [
+        {
+          "tourId": 4,
+          "title": "Nainital Auli Tour Package",
+          "placeName": "Nainital",
+          "duration": "6 Days / 5 Nights",
+          "startingPrice": 8503,
+          "originalPrice": 12021,
+          "coverImage": null,
+          "slug": "nainital-auli-tour-package",
+          "tourImages": []
+        }
+      ],
+      "page": 0,
+      "size": 12,
+      "totalElements": 1,
+      "totalPages": 1,
+      "last": true
+    }
+  },
+  "4": {
+    "status": 200,
+    "message": "Success",
+    "path": "/api/destinations/4/tours",
+    "data": {
+      "content": [
+        {
+          "tourId": 5,
+          "title": "Best of Spiti Valley Tour Package",
+          "placeName": "Spiti",
+          "duration": "India | Travel | Holiday Dream  Explore  Discover",
+          "startingPrice": 9995,
+          "originalPrice": 13313,
+          "coverImage": "https://picsum.photos/1200/600?best-of-spiti-valley-tour-package",
+          "slug": "best-of-spiti-valley-tour-package",
+          "tourImages": []
+        }
+      ],
+      "page": 0,
+      "size": 12,
+      "totalElements": 1,
+      "totalPages": 1,
+      "last": true
+    }
+  },
+  "5": {
+    "status": 200,
+    "message": "Success",
+    "path": "/api/destinations/5/tours",
+    "data": {
+      "content": [
+        {
+          "tourId": 10,
+          "title": "go-to-goa",
+          "placeName": "sdxkjqwhdjw",
+          "duration": "4 days 3 nights",
+          "startingPrice": 10000,
+          "originalPrice": 14000,
+          "coverImage": "https://eurekacontent.gameit.in/test/img/sdxkjqwhdjw/1777015472649-img3.avif",
+          "slug": "goa-trip",
+          "tourImages": [
+            "https://eurekacontent.gameit.in/test/img/sdxkjqwhdjw/1777015472649-img3.avif",
+            "https://eurekacontent.gameit.in/test/img/sdxkjqwhdjw/1777015472659-img1.avif",
+            "https://eurekacontent.gameit.in/test/img/sdxkjqwhdjw/1777015472657-img2.avif"
+          ]
+        }
+      ],
+      "page": 0,
+      "size": 12,
+      "totalElements": 1,
+      "totalPages": 1,
+      "last": true
+    }
+  },
+  "6": {
+    "status": 200,
+    "message": "Success",
+    "path": "/api/destinations/6/tours",
+    "data": {
+      "content": [],
+      "page": 0,
+      "size": 12,
+      "totalElements": 0,
+      "totalPages": 0,
+      "last": true
+    }
+  },
+  "7": {
+    "status": 200,
+    "message": "Success",
+    "path": "/api/destinations/7/tours",
+    "data": {
+      "content": [],
+      "page": 0,
+      "size": 12,
+      "totalElements": 0,
+      "totalPages": 0,
+      "last": true
+    }
+  },
+  "8": {
+    "status": 200,
+    "message": "Success",
+    "path": "/api/destinations/8/tours",
+    "data": {
+      "content": [
+        {
+          "tourId": 6,
+          "title": "Rajsthan Trip",
+          "placeName": null,
+          "duration": null,
+          "startingPrice": null,
+          "originalPrice": null,
+          "coverImage": null,
+          "slug": null,
+          "tourImages": []
+        }
+      ],
+      "page": 0,
+      "size": 12,
+      "totalElements": 1,
+      "totalPages": 1,
+      "last": true
+    }
+  },
+  "17": {
+    "status": 200,
+    "message": "Success",
+    "path": "/api/destinations/17/tours",
+    "data": {
+      "content": [
+        {
+          "tourId": 9,
+          "title": "Chandigarh Trip",
+          "placeName": "Chandigarh",
+          "duration": "3 Days 2 Nights",
+          "startingPrice": 5000,
+          "originalPrice": 7000,
+          "coverImage": "https://eurekacontent.gameit.in/test/img/Chandigarh/1777014824541-img3.avif",
+          "slug": "Chandigarh-trip",
+          "tourImages": [
+            "https://eurekacontent.gameit.in/test/img/chandigarh/1776670137648-chmaincity.jpg",
+            "https://eurekacontent.gameit.in/test/img/chandigarh/1777014666739-._cloudFiles_nIup0rR7x_img3.avif",
+            "https://eurekacontent.gameit.in/test/img/Chandigarh/1777014824543-img2.avif"
+          ]
+        }
+      ],
+      "page": 0,
+      "size": 12,
+      "totalElements": 1,
+      "totalPages": 1,
+      "last": true
+    }
+  }
+}

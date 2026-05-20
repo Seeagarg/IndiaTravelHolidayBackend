@@ -1,0 +1,78 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory
+coverage/
+
+# Build folders
+dist/
+build/
+
+# Temporary files
+tmp/
+temp/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor folders
+.vscode/
+.idea/
+
+# Mac system files
+.AppleDouble
+.LSOverride
+
+# Linux files
+*~
+
+# Package lock optional
+package-lock.json
+
+# Uploaded files (optional)
+uploads/
+public/uploads/
+
+# Cache
+.cache/
+
+# Next.js
+.next/
+
+# React Native
+.expo/
+.expo-shared/
+
+# Docker
+docker-compose.override.yml
+
+# PM2
+.pm2/
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc
+*.swp

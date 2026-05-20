@@ -1,0 +1,450 @@
+{
+  "shimla-local-tour": {
+    "tourId": 1,
+    "title": "Shimla Local",
+    "duration": "3 Days / 2 Night",
+    "price": 5000,
+    "images": [
+      "https://eurekacontent.gameit.in/test/img/Shimla/shimla4.jpeg",
+      "https://eurekacontent.gameit.in/test/img/Shimla/shimla6.jpeg",
+      "https://eurekacontent.gameit.in/test/img/Shimla/shimla5.jpeg",
+      "https://eurekacontent.gameit.in/test/img/Shimla/shimla4.jpeg",
+      "https://eurekacontent.gameit.in/test/img/Shimla/shimla4.jpeg",
+      "https://eurekacontent.gameit.in/test/img/Shimla/shimla5.jpeg",
+      "https://eurekacontent.gameit.in/test/img/Shimla/Stay/stay1.jpg",
+      "https://eurekacontent.gameit.in/test/img/Shimla/Stay/stay2.webp",
+      "https://eurekacontent.gameit.in/test/img/Shimla/Stay/stay3.jpg",
+      "https://eurekacontent.gameit.in/test/img/Shimla/Stay/stay4.jpg"
+    ],
+    "destinationImage": "https://eurekacontent.gameit.in/test/img/Shimla/shimla4.jpeg",
+    "stayImage": "https://eurekacontent.gameit.in/test/img/Shimla/shimla6.jpeg",
+    "activityImage": "https://eurekacontent.gameit.in/test/img/Shimla/shimla5.jpeg",
+    "summary": "This is a sample summary for Shimla Local Tour. It covers major highlights, stay comfort, and day-wise experiences.",
+    "activities": [],
+    "itinerary": [
+      {
+        "dayNumber": 1,
+        "title": "Delhi to Shimla",
+        "activities": []
+      },
+      {
+        "dayNumber": 2,
+        "title": "Shimla - Local Sightseeing ",
+        "activities": []
+      },
+      {
+        "dayNumber": 3,
+        "title": "Shimla to Delhi ",
+        "activities": []
+      }
+    ],
+    "inclusions": [
+      "4star hotel"
+    ],
+    "exclusions": [
+      "Flights and lunch"
+    ],
+    "fetchedReviews": [
+      {
+        "id": 2,
+        "tourId": 1,
+        "userName": "Rahul",
+        "reviewText": "Very good experience",
+        "rating": 4,
+        "images": []
+      },
+      {
+        "id": 1,
+        "tourId": 1,
+        "userName": "Ashok",
+        "reviewText": "Amazing trip!",
+        "rating": 5,
+        "images": [
+          "/img/rev1.jpg"
+        ]
+      }
+    ]
+  },
+  "shimla-manali-tour": {
+    "tourId": 2,
+    "title": "Shimla Manali Tour",
+    "duration": "5 Days / 4 Nights",
+    "price": 15000,
+    "images": [
+      "https://eurekacontent.gameit.in/test/img/Manali/Manali1.jpeg",
+      "https://eurekacontent.gameit.in/test/img/Manali/Manali2.jpeg",
+      "https://eurekacontent.gameit.in/test/img/Manali/Manali3.jpeg",
+      "https://eurekacontent.gameit.in/test/img/Manali/Manali4.jpeg",
+      "https://eurekacontent.gameit.in/test/img/Manali/Manali5.jpeg",
+      "https://eurekacontent.gameit.in/test/img/Manali/Manali7.jpeg",
+      "https://eurekacontent.gameit.in/test/img/Manali/Manali8.jpeg",
+      "https://eurekacontent.gameit.in/test/img/Manali/Manali9.jpeg",
+      "https://eurekacontent.gameit.in/test/img/Manali/Stay/stay3.jpg",
+      "https://eurekacontent.gameit.in/test/img/Manali/Stay/stay5.avif",
+      "https://eurekacontent.gameit.in/test/img/Manali/Activities/activity1.jpg",
+      "https://eurekacontent.gameit.in/test/img/Manali/Activities/activity2.png",
+      "https://eurekacontent.gameit.in/test/img/Manali/Activities/activity3.jpg",
+      "https://eurekacontent.gameit.in/test/img/Manali/Activities/activity4.jpeg"
+    ],
+    "destinationImage": "https://eurekacontent.gameit.in/test/img/Manali/Manali1.jpeg",
+    "stayImage": "https://eurekacontent.gameit.in/test/img/Manali/Manali2.jpeg",
+    "activityImage": "https://eurekacontent.gameit.in/test/img/Manali/Manali3.jpeg",
+    "summary": "This is a sample summary for Shimla Manali Tour. It covers major highlights, stay comfort, and day-wise experiences.",
+    "activities": [
+      "Check-in",
+      "Mall Road walk",
+      "Jakhoo Temple",
+      "Ridge"
+    ],
+    "itinerary": [
+      {
+        "dayNumber": 1,
+        "title": "Arrival Shimla",
+        "activities": [
+          "Check-in",
+          "Mall Road walk"
+        ]
+      },
+      {
+        "dayNumber": 2,
+        "title": "Local Sightseeing",
+        "activities": [
+          "Jakhoo Temple",
+          "Ridge"
+        ]
+      }
+    ],
+    "inclusions": [
+      "Hotel Stay",
+      "Daily Breakfast & Dinner",
+      "Pickup & Drop (Volvo / Cab)",
+      "Sightseeing (Solang Valley",
+      "Rohtang Pass)",
+      "All toll taxes & parking",
+      "Driver allowance"
+    ],
+    "exclusions": [
+      "Personal Expenses",
+      "Adventure Activities (paragliding",
+      "skiing",
+      "etc.)",
+      "Entry tickets to monuments",
+      "Rohtang Pass permit",
+      "Travel insurance",
+      "Anything not mentioned in inclusions"
+    ],
+    "fetchedReviews": []
+  },
+  "shimla-chail-tour": {
+    "tourId": 3,
+    "title": "Shimla Chail Tour",
+    "duration": "3 Days / 2 Nights",
+    "price": 8000,
+    "images": [],
+    "destinationImage": "https://eurekacontent.gameit.in/test/img/Shimla/shimla6.jpeg",
+    "stayImage": "https://eurekacontent.gameit.in/test/img/Shimla/shimla6.jpeg",
+    "activityImage": "https://eurekacontent.gameit.in/test/img/Shimla/shimla6.jpeg",
+    "summary": "This is a sample summary for Shimla Chail Tour. It covers major highlights, stay comfort, and day-wise experiences.",
+    "activities": [],
+    "itinerary": [],
+    "inclusions": [],
+    "exclusions": [],
+    "fetchedReviews": []
+  },
+  "nainital-auli-tour-package": {
+    "tourId": 4,
+    "title": "Nainital Auli Tour Package",
+    "duration": "6 Days / 5 Nights",
+    "price": 8503,
+    "images": [],
+    "destinationImage": null,
+    "stayImage": null,
+    "activityImage": null,
+    "summary": "This is a sample summary for Nainital Auli Tour Package. It covers major highlights, stay comfort, and day-wise experiences.",
+    "activities": [
+      "Sightseeing and exploration"
+    ],
+    "itinerary": [
+      {
+        "dayNumber": 1,
+        "title": "Day 1 - Delhi to Nainital",
+        "activities": [
+          "Sightseeing and exploration"
+        ]
+      },
+      {
+        "dayNumber": 2,
+        "title": "Day 2 - Haridwar - Nainital to Kausani via Almora",
+        "activities": [
+          "Sightseeing and exploration"
+        ]
+      },
+      {
+        "dayNumber": 3,
+        "title": "Day 3 - Kausani to Joshimath",
+        "activities": [
+          "Sightseeing and exploration"
+        ]
+      },
+      {
+        "dayNumber": 4,
+        "title": "Day 4 - Excursion to Auli",
+        "activities": [
+          "Sightseeing and exploration"
+        ]
+      },
+      {
+        "dayNumber": 5,
+        "title": "Day 5 - Joshimath to Rishikesh",
+        "activities": [
+          "Sightseeing and exploration"
+        ]
+      },
+      {
+        "dayNumber": 6,
+        "title": "Day 6 - Rishikesh sightseeing and departure to Delhi",
+        "activities": [
+          "Sightseeing and exploration"
+        ]
+      }
+    ],
+    "inclusions": [
+      "Specilaized Bilingual Guide",
+      "Private Transport",
+      "Accommodation in Hotel as per the variant selected",
+      "Breakfast and Dinner as mentioned in the variant",
+      "Highly-Experienced driver cum guide",
+      "Sightseeing as per itinerary",
+      "All toll tax",
+      "parking",
+      "fuel and driver allowances",
+      "All applicable taxes",
+      "Comfortable and hygienic vehicle (AC Sedan/SUV/Traveler) for sightseeing on all days as per the itinerary"
+    ],
+    "exclusions": [
+      "Entrance fees",
+      "Laundry",
+      "Tips"
+    ],
+    "fetchedReviews": []
+  },
+  "best-of-spiti-valley-tour-package": {
+    "tourId": 5,
+    "title": "Best of Spiti Valley Tour Package",
+    "duration": "India | Travel | Holiday Dream  Explore  Discover",
+    "price": 9995,
+    "images": [],
+    "destinationImage": "https://picsum.photos/1200/600?best-of-spiti-valley-tour-package",
+    "stayImage": "https://picsum.photos/1200/600?best-of-spiti-valley-tour-package",
+    "activityImage": "https://picsum.photos/1200/600?best-of-spiti-valley-tour-package",
+    "summary": "This is a sample summary for Best of Spiti Valley Tour Package. It covers major highlights, stay comfort, and day-wise experiences.",
+    "activities": [
+      "Sightseeing and exploration"
+    ],
+    "itinerary": [
+      {
+        "dayNumber": 1,
+        "title": "Day 1 - Arrival in Manali and Sightseeing",
+        "activities": [
+          "Sightseeing and exploration"
+        ]
+      },
+      {
+        "dayNumber": 2,
+        "title": "Day 2 - Manali to Kaza via Kunzum Pass",
+        "activities": [
+          "Sightseeing and exploration"
+        ]
+      },
+      {
+        "dayNumber": 3,
+        "title": "Day 3 - Sightseeing around Kaza",
+        "activities": [
+          "Sightseeing and exploration"
+        ]
+      },
+      {
+        "dayNumber": 4,
+        "title": "Day 4 - Excursion to Tabo with Dhankar and Pin Valley",
+        "activities": [
+          "Sightseeing and exploration"
+        ]
+      },
+      {
+        "dayNumber": 5,
+        "title": "Day 5 - Kaza to Chandratal Lake",
+        "activities": [
+          "Sightseeing and exploration"
+        ]
+      },
+      {
+        "dayNumber": 6,
+        "title": "Day 6 - Chandratal Lake to Manali via Rohtang",
+        "activities": [
+          "Sightseeing and exploration"
+        ]
+      }
+    ],
+    "inclusions": [
+      "Specilaized Bilingual Guide",
+      "Private Transport",
+      "Entrance Fees",
+      "Accommodation in Hotel as per the variant selected",
+      "Breakfast and Dinner as mentioned in the variant",
+      "Highly-Experienced driver cum guide",
+      "Sightseeing as per itinerary",
+      "All toll tax",
+      "parking",
+      "fuel and driver allowances",
+      "All applicable taxes",
+      "Comfortable and hygienic vehicle (AC Sedan/SUV/Traveler) for sightseeing on all days as per the itinerary"
+    ],
+    "exclusions": [
+      "Entrance fees",
+      "Laundry & Laundry",
+      "Tips"
+    ],
+    "fetchedReviews": []
+  },
+  "goa-trip": {
+    "tourId": 10,
+    "title": "go-to-goa",
+    "duration": "4 days 3 nights",
+    "price": 10000,
+    "images": [
+      "https://eurekacontent.gameit.in/test/img/sdxkjqwhdjw/1777015472649-img3.avif",
+      "https://eurekacontent.gameit.in/test/img/sdxkjqwhdjw/1777015472657-img2.avif",
+      "https://eurekacontent.gameit.in/test/img/sdxkjqwhdjw/1777015472659-img1.avif"
+    ],
+    "destinationImage": "https://eurekacontent.gameit.in/test/img/sdxkjqwhdjw/1777015472649-img3.avif",
+    "stayImage": "https://eurekacontent.gameit.in/test/img/sdxkjqwhdjw/1777015472657-img2.avif",
+    "activityImage": "https://eurekacontent.gameit.in/test/img/sdxkjqwhdjw/1777015472659-img1.avif",
+    "summary": "asmdjajxbaijksnj xjnsbkjnxqwkj axbqwkjnsqwn xjkdnqwdhqw xjsadiqwjik ddxqwjhdoiqwj dkjqwndoiqwjdi daxkjqndijqwi dkjwnqdqwio djxwqidhqwi asxjhdiqwhisq djqwidhqwi dakjnqwdjhwqio daskjdiqjhwidjsh dasjkndhqiwhdi dqakjhndqwiohdioqwhd  wqdhiqwhi",
+    "activities": [
+      "sajwhdjqwbnd",
+      "qwkjdnqiw",
+      "dkwjadhqi",
+      "dxkqwjjdhi",
+      "qwdkqwijhd",
+      "qnajwdhqijw",
+      "duqwdquwdha",
+      "adjwqhdguiqw",
+      "sduqwduqwg",
+      "xiquzwdhiqwh",
+      "qwkdhqwj",
+      "dxwudhiuwq",
+      "xdwqudg",
+      "sqwuwqudhiw",
+      "qdkjhqwjd",
+      "whdqwdu",
+      "dujwqhdai",
+      "xqudhwqu"
+    ],
+    "itinerary": [
+      {
+        "dayNumber": 1,
+        "title": "asjhdiquwhiqwnd",
+        "activities": [
+          "sajwhdjqwbnd",
+          "qwkjdnqiw",
+          "dkwjadhqi",
+          "dxkqwjjdhi",
+          "qwdkqwijhd"
+        ]
+      },
+      {
+        "dayNumber": 2,
+        "title": "d,qjwhdj",
+        "activities": [
+          "qnajwdhqijw",
+          "duqwdquwdha",
+          "adjwqhdguiqw",
+          "sduqwduqwg",
+          "xiquzwdhiqwh"
+        ]
+      },
+      {
+        "dayNumber": 3,
+        "title": "qwsadiqwjhdqwj",
+        "activities": [
+          "qwkdhqwj",
+          "dxwudhiuwq",
+          "xdwqudg",
+          "sqwuwqudhiw"
+        ]
+      },
+      {
+        "dayNumber": 4,
+        "title": "qduqwhdq",
+        "activities": [
+          "qdkjhqwjd",
+          "whdqwdu",
+          "dujwqhdai",
+          "xqudhwqu"
+        ]
+      }
+    ],
+    "inclusions": [
+      "qwjdhwqh",
+      "qwdhqwud",
+      "qwudhsuqwdh",
+      "kadijq"
+    ],
+    "exclusions": [
+      "asdhwqud",
+      "ekfdihwiedh"
+    ],
+    "fetchedReviews": []
+  },
+  "Chandigarh-trip": {
+    "tourId": 9,
+    "title": "Chandigarh Trip",
+    "duration": "3 Days 2 Nights",
+    "price": 5000,
+    "images": [
+      "https://eurekacontent.gameit.in/test/img/chandigarh/1776670137648-chmaincity.jpg",
+      "https://eurekacontent.gameit.in/test/img/chandigarh/1776670137652-suknalake.jpg",
+      "https://eurekacontent.gameit.in/test/img/chandigarh/1777014666736-._cloudFiles_M3Zf6dl6w_img2.avif",
+      "https://eurekacontent.gameit.in/test/img/chandigarh/1777014666739-._cloudFiles_nIup0rR7x_img3.avif",
+      "https://eurekacontent.gameit.in/test/img/Chandigarh/1777014824541-img3.avif",
+      "https://eurekacontent.gameit.in/test/img/Chandigarh/1777014824543-img2.avif",
+      "https://eurekacontent.gameit.in/test/img/Chandigarh/1777014824546-img1.avif"
+    ],
+    "destinationImage": "https://eurekacontent.gameit.in/test/img/chandigarh/1776670137648-chmaincity.jpg",
+    "stayImage": "https://eurekacontent.gameit.in/test/img/chandigarh/1776670137652-suknalake.jpg",
+    "activityImage": "https://eurekacontent.gameit.in/test/img/chandigarh/1777014666736-._cloudFiles_M3Zf6dl6w_img2.avif",
+    "summary": "Amazing Chandigarh experience",
+    "activities": [
+      "Check-in",
+      "Beach visit",
+      "Water sports",
+      "Night party"
+    ],
+    "itinerary": [
+      {
+        "dayNumber": 1,
+        "title": "Arrival",
+        "activities": [
+          "Check-in",
+          "Beach visit"
+        ]
+      },
+      {
+        "dayNumber": 2,
+        "title": "Explore",
+        "activities": [
+          "Water sports",
+          "Night party"
+        ]
+      }
+    ],
+    "inclusions": [
+      "Hotel",
+      "Food"
+    ],
+    "exclusions": [
+      "Flight"
+    ],
+    "fetchedReviews": []
+  }
+}

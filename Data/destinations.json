@@ -1,0 +1,58 @@
+{
+  "status": 200,
+  "message": "Success",
+  "path": "/api/destinations",
+  "data": [
+    {
+      "id": 3,
+      "name": "Uttrakhand",
+      "iconUrl": "https://eurekacontent.gameit.in/test/img/Destinations/uttrakhand.png",
+      "bannerUrl": "https://eurekacontent.gameit.in/test/img/Destinations/uttrakhand.png"
+    },
+    {
+      "id": 4,
+      "name": "Spiti",
+      "iconUrl": "https://eurekacontent.gameit.in/test/img/Destinations/Spiti.png",
+      "bannerUrl": "https://eurekacontent.gameit.in/test/img/Destinations/Spiti.png"
+    },
+    {
+      "id": 5,
+      "name": "Goa",
+      "iconUrl": "https://eurekacontent.gameit.in/test/img/Destinations/goa.png",
+      "bannerUrl": "https://eurekacontent.gameit.in/test/img/Destinations/goa.png"
+    },
+    {
+      "id": 6,
+      "name": "Jaipur",
+      "iconUrl": "https://eurekacontent.gameit.in/test/img/Destinations/jaipur.png",
+      "bannerUrl": "https://eurekacontent.gameit.in/test/img/Destinations/jaipur.png"
+    },
+    {
+      "id": 7,
+      "name": "Manali",
+      "iconUrl": "https://eurekacontent.gameit.in/test/img/Destinations/Manali.png",
+      "bannerUrl": "https://eurekacontent.gameit.in/test/img/Destinations/Manali.png"
+    },
+    {
+      "id": 8,
+      "name": "Rajsthan Trip",
+      "iconUrl": "https://eurekacontent.gameit.in/test/img/Rajsthan_Trip/1776186121613-image__3_.png",
+      "bannerUrl": "https://eurekacontent.gameit.in/test/img/Rajsthan_Trip/1776186666882-image__3_.png"
+    },
+    {
+      "id": 17,
+      "name": "Chandigarh",
+      "iconUrl": "https://res.cloudinary.com/dz8etjb02/image/upload/v1779302572/tourAndTravels/bdq1y4p0wkbzrisgijfz.png",
+      "bannerUrl": "https://eurekacontent.gameit.in/test/img/Chandigarh/1776669956494-chandigarh.webp"
+    },
+    {
+      "id": 18,
+      "internalId": "18",
+      "name": "Himachal",
+      "label": "Himachal",
+      "isFeatured": true,
+      "iconUrl": "https://res.cloudinary.com/dz8etjb02/image/upload/v1779302133/tourAndTravels/pes7pdrcgopyzp6bpwhv.png",
+      "bannerUrl": "https://res.cloudinary.com/dz8etjb02/image/upload/v1779301923/tourAndTravels/gt2ip8rse56kpjkchwpv.png"
+    }
+  ]
+}
