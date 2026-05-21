@@ -30,11 +30,15 @@ app.post('/api/v1/contact', async (req, res) => {
   try {
 
     // Create transporter
-   const transporter = nodemailer.createTransport({
+ const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,
   secure: false,
-  family: 4, // force IPv4
+  requireTLS: true,
+  tls: {
+    rejectUnauthorized: false,
+    family: 4
+  },
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
