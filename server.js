@@ -6,55 +6,37 @@ const multer = require('multer');
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const cloudinary = require('cloudinary').v2;
 const nodemailer = require('nodemailer');
+const { Resend } = require("resend");
+
 require('dotenv').config();
 
 const app = express();
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
 app.use(cors());
 app.use(express.json());
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // --- PUBLIC APIs ---
+
 app.post('/api/v1/contact', async (req, res) => {
+
   const { name, email, mobileNumber, message } = req.body;
 
-  // Check SMTP configuration
-  if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
-    console.error("SMTP credentials missing.");
-
-    return res.status(500).json({
-      success: false,
-      message: 'Email configuration missing on server'
-    });
-  }
-
   try {
-
-    // Create transporter
- const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 587,
-  secure: false,
-  requireTLS: true,
-  family: 4,
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
 
     // =========================
     // EMAIL TO ADMIN / COMPANY
     // =========================
 
-    const adminMailOptions = {
-      from: `"${name}" <${process.env.EMAIL_USER}>`,
-
+    await resend.emails.send({
+      from: 'Travel Website <onboarding@resend.dev>',
       to: process.env.EMAIL_RECEIVER || process.env.EMAIL_USER,
 
-      // Reply goes directly to customer
-      replyTo: email,
+      reply_to: email,
 
-      subject: `🌍 New Travel Inquiry from ${name} (${email})`,
+      subject: `🌍 New Travel Inquiry from ${name}`,
 
       html: `
         <div style="
@@ -72,145 +54,47 @@ app.post('/api/v1/contact', async (req, res) => {
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
           ">
 
-            <!-- Header -->
             <div style="
               background: linear-gradient(90deg, #ff7b00, #ffb347);
               padding: 25px;
               text-align: center;
               color: white;
             ">
-              <h1 style="margin: 0; font-size: 28px;">
-                ✈️ New Travel Inquiry
-              </h1>
-
-              <p style="
-                margin-top: 8px;
-                font-size: 15px;
-              ">
-                A customer has submitted a new travel request.
-              </p>
+              <h1>✈️ New Travel Inquiry</h1>
             </div>
 
-            <!-- Body -->
-            <div style="
-              padding: 30px;
-              color: #333;
-            ">
+            <div style="padding: 30px;">
 
-              <h2 style="
-                margin-top: 0;
-                color: #ff7b00;
-                margin-bottom: 20px;
+              <p><strong>👤 Name:</strong> ${name}</p>
+
+              <p><strong>📧 Email:</strong> ${email}</p>
+
+              <p><strong>📱 Phone:</strong> ${mobileNumber}</p>
+
+              <div style="
+                background: #f9fafc;
+                padding: 18px;
+                border-left: 4px solid #ff7b00;
+                border-radius: 8px;
+                margin-top: 20px;
               ">
-                Customer Details
-              </h2>
-
-              <table style="
-                width: 100%;
-                border-collapse: collapse;
-                font-size: 15px;
-              ">
-
-                <tr>
-                  <td style="
-                    padding: 12px;
-                    border-bottom: 1px solid #eee;
-                    width: 160px;
-                  ">
-                    <strong>👤 Name</strong>
-                  </td>
-
-                  <td style="
-                    padding: 12px;
-                    border-bottom: 1px solid #eee;
-                  ">
-                    ${name || 'N/A'}
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="
-                    padding: 12px;
-                    border-bottom: 1px solid #eee;
-                  ">
-                    <strong>📧 Email</strong>
-                  </td>
-
-                  <td style="
-                    padding: 12px;
-                    border-bottom: 1px solid #eee;
-                  ">
-                    ${email || 'N/A'}
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="
-                    padding: 12px;
-                    border-bottom: 1px solid #eee;
-                  ">
-                    <strong>📱 Phone</strong>
-                  </td>
-
-                  <td style="
-                    padding: 12px;
-                    border-bottom: 1px solid #eee;
-                  ">
-                    ${mobileNumber || 'N/A'}
-                  </td>
-                </tr>
-
-              </table>
-
-              <!-- Message -->
-              <div style="margin-top: 30px;">
-
-                <h3 style="
-                  color: #ff7b00;
-                  margin-bottom: 12px;
-                ">
-                  📝 Customer Message
-                </h3>
-
-                <div style="
-                  background: #f9fafc;
-                  padding: 18px;
-                  border-left: 4px solid #ff7b00;
-                  border-radius: 8px;
-                  line-height: 1.7;
-                  color: #444;
-                ">
-                  ${message || 'No message provided'}
-                </div>
-
+                ${message}
               </div>
 
-            </div>
-
-            <!-- Footer -->
-            <div style="
-              background: #f4f4f4;
-              padding: 18px;
-              text-align: center;
-              font-size: 13px;
-              color: #777;
-            ">
-              © ${new Date().getFullYear()} Travel Company
             </div>
 
           </div>
 
         </div>
       `
-    };
+    });
 
     // =========================
     // AUTO REPLY TO CUSTOMER
     // =========================
 
-    const autoReplyOptions = {
-      from: `"Travel Website" <${process.env.EMAIL_USER}>`,
-
+    await resend.emails.send({
+      from: 'Travel Website <onboarding@resend.dev>',
       to: email,
 
       subject: `✨ We Received Your Travel Inquiry`,
@@ -231,54 +115,28 @@ app.post('/api/v1/contact', async (req, res) => {
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
           ">
 
-            <!-- Header -->
             <div style="
               background: linear-gradient(90deg, #ff7b00, #ffb347);
               padding: 30px;
               text-align: center;
               color: white;
             ">
-
-              <h1 style="
-                margin: 0;
-                font-size: 30px;
-              ">
-                ✈️ Thank You for Contacting Us!
-              </h1>
-
-              <p style="
-                margin-top: 10px;
-                font-size: 16px;
-              ">
-                Your travel journey starts here 🌍
-              </p>
-
+              <h1>✈️ Thank You for Contacting Us!</h1>
             </div>
 
-            <!-- Body -->
             <div style="
               padding: 35px;
               color: #333;
               line-height: 1.8;
             ">
 
-              <h2 style="
-                color: #ff7b00;
-                margin-top: 0;
-              ">
-                Hello ${name || 'Traveler'},
-              </h2>
+              <h2>Hello ${name},</h2>
 
               <p>
                 Thank you for reaching out to us.
-                We have successfully received your travel inquiry.
+                We have successfully received your inquiry.
               </p>
 
-              <p>
-                Our travel experts are reviewing your request and will get back to you shortly with the best options and assistance.
-              </p>
-
-              <!-- Query Summary -->
               <div style="
                 margin-top: 25px;
                 background: #f9fafc;
@@ -287,87 +145,25 @@ app.post('/api/v1/contact', async (req, res) => {
                 border-radius: 8px;
               ">
 
-                <h3 style="
-                  margin-top: 0;
-                  color: #ff7b00;
-                ">
-                  📝 Your Submitted Query
-                </h3>
+                <h3>📝 Your Query</h3>
 
-                <p>
-                  <strong>Name:</strong>
-                  ${name || 'N/A'}
-                </p>
+                <p><strong>Name:</strong> ${name}</p>
 
-                <p>
-                  <strong>Email:</strong>
-                  ${email || 'N/A'}
-                </p>
+                <p><strong>Email:</strong> ${email}</p>
 
-                <p>
-                  <strong>Phone:</strong>
-                  ${mobileNumber || 'N/A'}
-                </p>
+                <p><strong>Phone:</strong> ${mobileNumber}</p>
 
-                <p>
-                  <strong>Message:</strong><br/>
-                  ${message || 'No message provided'}
-                </p>
+                <p><strong>Message:</strong> ${message}</p>
 
               </div>
 
-              <!-- CTA -->
-              <div style="
-                margin-top: 35px;
-                text-align: center;
-              ">
-
-                <p style="
-                  font-size: 15px;
-                  color: #555;
-                ">
-                  We will contact you soon.
-                </p>
-
-                <a href="mailto:${process.env.EMAIL_USER}" style="
-                  display: inline-block;
-                  margin-top: 10px;
-                  padding: 12px 24px;
-                  background: #ff7b00;
-                  color: white;
-                  text-decoration: none;
-                  border-radius: 6px;
-                  font-weight: bold;
-                ">
-                  Contact Support
-                </a>
-
-              </div>
-
-            </div>
-
-            <!-- Footer -->
-            <div style="
-              background: #f4f4f4;
-              padding: 18px;
-              text-align: center;
-              font-size: 13px;
-              color: #777;
-            ">
-              © ${new Date().getFullYear()} Travel Company • All Rights Reserved
             </div>
 
           </div>
 
         </div>
       `
-    };
-
-    // Send email to admin/company
-    await transporter.sendMail(adminMailOptions);
-
-    // Send auto-reply to customer
-    await transporter.sendMail(autoReplyOptions);
+    });
 
     return res.status(200).json({
       success: true,
@@ -380,7 +176,7 @@ app.post('/api/v1/contact', async (req, res) => {
 
     return res.status(500).json({
       success: false,
-      message: 'Failed to send query via email'
+      message: 'Failed to send query'
     });
   }
 });
