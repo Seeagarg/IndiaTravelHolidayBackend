@@ -31,7 +31,7 @@ app.post('/api/v1/contact', async (req, res) => {
     // =========================
 
     await resend.emails.send({
-      from: 'Travel Website <onboarding@resend.dev>',
+      from: `Travel Website <${email}>`,
       to: process.env.EMAIL_RECEIVER || process.env.EMAIL_USER,
 
       reply_to: email,
@@ -94,7 +94,7 @@ app.post('/api/v1/contact', async (req, res) => {
     // =========================
 
     await resend.emails.send({
-      from: 'Travel Website <onboarding@resend.dev>',
+      from: `Travel Website <${email}>`,
       to: email,
 
       subject: `✨ We Received Your Travel Inquiry`,
